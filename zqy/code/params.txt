@@ -19,3 +19,32 @@
    'max_depth': 6,
    'learning_rate': 0.05,
    'gamma': 0.1},
+===============================================
+top_n_params_date, top_n_scores_date, grid_search_date = grid_date_xgb(
+    train_data_preprocessed, train_date, param_grid_date, train_date_weight, iters=200
+)
+top_n_params_date, top_n_scores_date
+
+   {'reg_lambda': 1,
+   'reg_alpha': 0.8,
+   'random_state': 42,
+   'n_estimators': 500,
+   'max_depth': 8,
+   'learning_rate': 0.05,
+   'gamma': 0.2},
+  {'reg_lambda': 10,
+   'reg_alpha': 0.6000000000000001,
+   'random_state': 42,
+   'n_estimators': 500,
+   'max_depth': 8,
+   'learning_rate': 0.05,
+   'gamma': 0.2},
+  {'reg_lambda': 1,
+   'reg_alpha': 1.0,
+   'random_state': 42,
+   'n_estimators': 400,
+   'max_depth': 8,
+   'learning_rate': 0.05,
+   'gamma': 0.4}
+
+    array([-174.49178012, -174.8279519 , -177.43066666,
